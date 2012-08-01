@@ -1,21 +1,21 @@
 # cucumber-completion
 
-Cucumber provides great testing capability. However, you may not always want to run the entire feature, at which point you might open the file, find the line number of the Scenario you wish to run, and then append that to the end of the filename of the feature to be run. This tab-completion script provides the capability to skip searching for the line number within a cucumber feature file and, rather, choose from a listing of specified line numbers and their corresponding Scenarios right from the command line.
+Cucumber provides great testing capability. However, you may not always want to run the entire feature, at which point you might open the file, find the line number of the Scenario you wish to run, and then append that to the end of the filename of the feature to be run. This hinter script provides the capability to skip searching for the line number within a cucumber feature file and, rather, choose from a listing of specified line numbers and their corresponding Scenarios right from the command line.
 
 Install
 --------
 
-Copy the completion script to the bash_completion.d directory:
+Copy the hinter script to the bash_completion.d directory:
 
     cp test-cucumber /etc/bash_completion.d/
 
-Source the bash_completion file to load the new completion rules:
+Source the bash_completion file to load the new hinter rules:
 
     source /etc/bash_completion
 
 Usage
 --------
-In order to use the cucumber bash completion capability for running a particular Scenario, utilize the normal Cucumber syntax from the command line. However, after specifying the filename of the feature followed by a colon ':' indicating that you wish to enter a line number, press the tab key twice (such as in tab-completion):
+In order to use the cucumber bash hinter capability for running a particular Scenario, utilize the normal Cucumber syntax from the command line. However, after specifying the filename of the feature followed by a colon ':' indicating that you wish to enter a line number, press the tab key twice (such as in tab-completion):
 
     cucumber my_nifty_test.feature:<tab><tab>
 
